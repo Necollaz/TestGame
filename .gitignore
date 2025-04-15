@@ -1,5 +1,6 @@
 # Unity
 [Ll]ibrary/
+Library/PackageCache/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
@@ -25,11 +26,9 @@ Assets/AssetStoreTools*
 # VSCode
 .vscode/
 
-# OS
+# OS / Editor junk
 .DS_Store
 *.swp
-
-# Crash Reports
 sysinfo.txt
 
 # Visual Studio Cache
@@ -44,7 +43,7 @@ sysinfo.txt
 # Git LFS lock files
 *.lfs*
 
-# Builds
+# Mobile / Build targets
 *.apk
 *.aab
 *.xcodeproj
