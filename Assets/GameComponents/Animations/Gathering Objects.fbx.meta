@@ -1,0 +1,626 @@
+fileFormatVersion: 2
+guid: 0908bfa16d0a946f3b7a8fd4d70f29e7
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Collect
+      takeName: mixamo.com
+      internalID: -203655887218126122
+      firstFrame: 0
+      lastFrame: 179
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperLeg_L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperLeg_R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerLeg_L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerLeg_R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Shoulder_L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Shoulder_R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperArm_L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperArm_R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerArm_L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerArm_R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand_L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand_R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine3
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Character@Dwarf Walk(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Blacksmith01_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Clerk01_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 5.983248e-10, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Clerk01_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Clerk02_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Clerk03_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 5.983248e-10, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Clerk03_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Cook01_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Innkeeper01_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Innkeeper01_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Innkeeper02_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Innkeeper03_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Innkeeper03_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Merchant01_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Merchant01_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Merchant02_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Merchant02_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Merchant03_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Merchant03_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_People01_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_People01_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_People02_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_People02_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_People03_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_People03_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_People04_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_People04_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_People05_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_People05_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_People06_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_People06_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: 0.009945736, y: -0.00025821684, z: -0.030416269}
+      rotation: {x: 0.54647684, y: -0.49999005, z: -0.48358056, w: 0.4663935}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips
+      parentName: Root
+      position: {x: -0.57374066, y: -0.0008214712, z: -0.008562539}
+      rotation: {x: -0.04844892, y: -0.013965666, z: 0.04595974, w: 0.99767}
+      scale: {x: 1.000005, y: 1.0000036, z: 0.99999994}
+    - name: Spine1
+      parentName: Hips
+      position: {x: -0.08444862, y: -0.000000009536743, z: 1.7053025e-15}
+      rotation: {x: -0.0000009536743, y: -0, z: 0.03479114, w: 0.9993946}
+      scale: {x: 0.99999976, y: 1.0000006, z: 1.0000091}
+    - name: Spine2
+      parentName: Spine1
+      position: {x: -0.08964249, y: 0.00000045776366, z: 0}
+      rotation: {x: -0.000001937151, y: -0.00000008940697, z: 0.042445272, w: 0.9990988}
+      scale: {x: 1.0000054, y: 1.0000048, z: 1.0000021}
+    - name: Spine3
+      parentName: Spine2
+      position: {x: -0.09639511, y: 0, z: 0}
+      rotation: {x: 0.0000000012489637, y: 0.00000003330096, z: -0.0018180237, w: 0.9999984}
+      scale: {x: 0.9999976, y: 0.999998, z: 0.99999964}
+    - name: Shoulder_L
+      parentName: Spine3
+      position: {x: -0.11185119, y: -0.0013685798, z: 0.031788863}
+      rotation: {x: -0.34068337, y: 0.57854027, z: 0.5466447, w: 0.50040543}
+      scale: {x: 1.0000015, y: 0.99999964, z: 1.0000008}
+    - name: UpperArm_L
+      parentName: Shoulder_L
+      position: {x: -0.07767296, y: 0, z: 0.0000000023841857}
+      rotation: {x: -0.0011180491, y: 0.049627934, z: -0.1380866, w: 0.9891754}
+      scale: {x: 0.99999964, y: 0.9999989, z: 0.9999994}
+    - name: LowerArm_L
+      parentName: UpperArm_L
+      position: {x: -0.17480175, y: 0.000001373291, z: 0.0000000011920929}
+      rotation: {x: -0.0056056883, y: 0.018986814, z: -0.011326596, w: 0.9997399}
+      scale: {x: 0.99999976, y: 1.0000056, z: 1.0000037}
+    - name: Hand_L
+      parentName: LowerArm_L
+      position: {x: -0.14925577, y: -0.000000076293944, z: 0.0000000011920929}
+      rotation: {x: -0.00030225422, y: -0.023351198, z: 0.00685395, w: 0.9997038}
+      scale: {x: 0.9999962, y: 0.99999726, z: 0.99999344}
+    - name: Neck
+      parentName: Spine3
+      position: {x: -0.1257064, y: -0.00000043869017, z: 1.0913936e-12}
+      rotation: {x: 0.000005649048, y: 0.00000047451994, z: 0.12802932, w: -0.99177045}
+      scale: {x: 1.0000038, y: 1.0000062, z: 1.0000014}
+    - name: Head
+      parentName: Neck
+      position: {x: -0.044597853, y: 0, z: 0}
+      rotation: {x: 0.000000650039, y: 0.00000002766998, z: -0.042265426, w: -0.99910647}
+      scale: {x: 1.0000079, y: 1.0000082, z: 1.0000108}
+    - name: Head_end
+      parentName: Head
+      position: {x: -0.45554724, y: 0.00000012636184, z: 1.4551915e-13}
+      rotation: {x: -0.0000020771506, y: 0.00000023842043, z: -0.00000087846956, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shoulder_R
+      parentName: Spine3
+      position: {x: -0.11185127, y: -0.0013681983, z: -0.031790007}
+      rotation: {x: -0.34014922, y: 0.57912767, z: -0.54602486, w: -0.50076586}
+      scale: {x: 1.0000157, y: 1.0000011, z: 1.0000176}
+    - name: UpperArm_R
+      parentName: Shoulder_R
+      position: {x: -0.07767183, y: -0.000000076293944, z: -0.000000052452087}
+      rotation: {x: 0.0021743327, y: -0.049482852, z: -0.13814265, w: 0.98917305}
+      scale: {x: 0.99999714, y: 1.0000019, z: 0.99999774}
+    - name: LowerArm_R
+      parentName: UpperArm_R
+      position: {x: -0.17480198, y: 0.0000016021728, z: 0}
+      rotation: {x: 0.0056061125, y: -0.018982967, z: -0.011325735, w: 0.99973994}
+      scale: {x: 1.0000104, y: 1.0000013, z: 1.0000072}
+    - name: Hand_R
+      parentName: LowerArm_R
+      position: {x: -0.14925572, y: 0, z: 0.00000015377998}
+      rotation: {x: 0.0003016158, y: 0.023349395, z: 0.006853214, w: 0.9997039}
+      scale: {x: 1.0000128, y: 0.99999857, z: 1.0000205}
+    - name: Town_NPC_Blacksmith_Hammer
+      parentName: Hand_R
+      position: {x: -0.07380405, y: -0.006286392, z: -0.0025401013}
+      rotation: {x: 0.0051554865, y: 0.9999749, z: 0.000011623385, w: 0.004860273}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLeg_L
+      parentName: Hips
+      position: {x: 0.038571052, y: -0.00080245495, z: 0.118231885}
+      rotation: {x: 0.0058210953, y: 0.7091802, z: 0.7029836, w: 0.0533261}
+      scale: {x: 1.0000052, y: 1.0000081, z: 1.0000051}
+    - name: LowerLeg_L
+      parentName: UpperLeg_L
+      position: {x: -0.2898349, y: -0.0000003147125, z: -0.0000010347366}
+      rotation: {x: -0.005096707, y: -0.04350376, z: -0.005289082, w: 0.9990263}
+      scale: {x: 1.0000032, y: 1.0000018, z: 0.9999988}
+    - name: Foot_L
+      parentName: LowerLeg_L
+      position: {x: -0.22584517, y: -0.000000019073486, z: 0.00000004440546}
+      rotation: {x: -0.0000007478519, y: -0.029370345, z: -0.000000052445095, w: 0.9995686}
+      scale: {x: 1.0000095, y: 1.000003, z: 0.9999994}
+    - name: UpperLeg_R
+      parentName: Hips
+      position: {x: 0.038571015, y: -0.0008024645, z: -0.11823185}
+      rotation: {x: 0.0058212513, y: 0.7091808, z: -0.702983, w: -0.053326257}
+      scale: {x: 1.000007, y: 1.0000068, z: 1.0000172}
+    - name: LowerLeg_R
+      parentName: UpperLeg_R
+      position: {x: -0.28983483, y: -0.0000003814697, z: 0.0000009560584}
+      rotation: {x: 0.0050969687, y: 0.043503728, z: -0.0052888542, w: 0.99902624}
+      scale: {x: 1.0000275, y: 1.0000228, z: 1.000046}
+    - name: Foot_R
+      parentName: LowerLeg_R
+      position: {x: -0.22584493, y: -0.000000047683713, z: -8.9406965e-10}
+      rotation: {x: 0.0000012307427, y: 0.029370405, z: -0.0000000110885585, w: 0.9995686}
+      scale: {x: 1.0000062, y: 1.0000079, z: 1.0000192}
+    - name: Town_NPC_Innkeeper02_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Cook01_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Cook02_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Cook03_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Cook02_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Cook03_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Blacksmith03_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Blacksmith03_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Blacksmith02_M
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Blacksmith02_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Blacksmith01_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Town_NPC_Clerk02_F
+      parentName: Character@Dwarf Walk(Clone)
+      position: {x: -0, y: 5.983248e-10, z: 0}
+      rotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 5a3255f233e414a1383daa72309f9b55, type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
