@@ -1,41 +1,30 @@
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.UI;
 
 namespace GameComponents.Scripts.MusicComponents
 {
     public class SettingMusic : MonoBehaviour
     {
-        private const string AllParam = "AllMusicVolume";
-    
-        [SerializeField] private AudioMixer _mixer;
         [SerializeField] private Slider _generalSlider;
-
-        private VolumeControl _volumeControl;
-
-        private void Awake()
-        {
-            _volumeControl = new VolumeControl(_mixer);
-        }
+        [SerializeField] private AudioManager _audioManager;
 
         private void OnEnable()
         {
-            InitSlider(AllParam, _generalSlider, 0.75f);
+            float normalized = PlayerPrefs.GetFloat(AudioManager.VolumeKey, _audioManager.DefaultVolume);
+            _generalSlider.value = normalized;
+            
+            _audioManager.SetVolume(normalized, save: false);
+            _generalSlider.onValueChanged.AddListener(OnSliderChanged);
         }
 
         private void OnDisable()
         {
-            _generalSlider.onValueChanged.RemoveAllListeners();
+            _generalSlider.onValueChanged.RemoveListener(OnSliderChanged);
         }
 
-        private void InitSlider(string param, Slider slider, float defaultVol)
+        private void OnSliderChanged(float value)
         {
-            float saved = PlayerPrefs.GetFloat(param, defaultVol);
-            slider.value = saved;
-            
-            _volumeControl.SetVolume(param, saved);
-
-            slider.onValueChanged.AddListener(v => { _volumeControl.SetVolume(param, v); PlayerPrefs.SetFloat(param, v); PlayerPrefs.Save(); });
+            _audioManager.SetVolume(value, save: true);
         }
     }
 }

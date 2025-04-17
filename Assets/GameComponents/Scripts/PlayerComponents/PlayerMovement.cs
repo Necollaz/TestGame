@@ -23,6 +23,11 @@ namespace GameComponents.Scripts.PlayerComponents
             _animation.SetWalking(false);
         }
         
+        private void Start()
+        {
+            _animation.SetWalking(false);
+        }
+        
         private void Update()
         {
             HandleMovement();

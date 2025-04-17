@@ -91,34 +91,6 @@ namespace GameComponents.Scripts.PlayerComponents
                 controller.SetTargetPosition(targetPos, null);
                 controller.SpawnIndicator(hit.point);
             }
-            
-            /*if (Physics.Raycast(ray, out RaycastHit hitInfo))
-            {
-                if (hitInfo.collider.TryGetComponent(out ResourceSpawner spawner))
-                {
-                    _controller.IndicatorGenerator.ClearIndicator();
-
-                    Vector3 targetPos;
-                    
-                    if (spawner.StopPointPlayer != null)
-                    {
-                        targetPos = new Vector3(spawner.StopPointPlayer.position.x, _controller.transform.position.y, spawner.StopPointPlayer.position.z);
-                    }
-                    else
-                    {
-                        targetPos = new Vector3(spawner.transform.position.x, _controller.transform.position.y, spawner.transform.position.z);
-                    }
-                
-                    _controller.SetTargetPosition(targetPos, spawner);
-                }
-                else
-                {
-                    Vector3 targetPos = new Vector3(hitInfo.point.x, _controller.transform.position.y, hitInfo.point.z);
-                
-                    _controller.SetTargetPosition(targetPos, null);
-                    _controller.SpawnIndicator(hitInfo.point);
-                }
-            }*/
         }
     }
 }

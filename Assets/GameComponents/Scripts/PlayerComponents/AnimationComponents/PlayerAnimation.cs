@@ -2,19 +2,18 @@ using UnityEngine;
 
 namespace GameComponents.Scripts.PlayerComponents.AnimationComponents
 {
+    [DefaultExecutionOrder(-100)]
     [RequireComponent(typeof(Animator))]
     public class PlayerAnimation : MonoBehaviour
     {
         [SerializeField] private Animator _animator;
         
-        private int _walkingHash;
-        private int _collectHash;
+        private readonly int _walkingHash = AnimationDataParams.Params.Walking;
+        private readonly int _collectHash = AnimationDataParams.Params.Collect;
 
         private void Awake()
         {
             _animator = GetComponent<Animator>();
-            _walkingHash = AnimationDataParams.Params.Walking;
-            _collectHash = AnimationDataParams.Params.Collect;
             
             _animator.SetBool(_walkingHash, false);
             _animator.SetBool(_collectHash, false);

@@ -1,21 +1,29 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 namespace GameComponents.Scripts.MusicComponents
 {
     public class GameAudio : MonoBehaviour
     {
-        [Header("Background Music")]
         [SerializeField] private AudioSource _backgroundMusicAudioSource;
         [SerializeField] private AudioClip _backgroundMusicClip;
-
+        [SerializeField] private AudioMixerGroup _mixerGroup;
+        
         private void Start()
         {
-            if (_backgroundMusicAudioSource != null && _backgroundMusicClip != null)
+            if(_backgroundMusicAudioSource == null || _backgroundMusicClip == null)
             {
-                _backgroundMusicAudioSource.clip = _backgroundMusicClip;
-                _backgroundMusicAudioSource.loop = true;
-                _backgroundMusicAudioSource.Play();
+                return;
             }
+
+            if(_mixerGroup != null)
+            {
+                _backgroundMusicAudioSource.outputAudioMixerGroup = _mixerGroup;
+            }
+
+            _backgroundMusicAudioSource.clip = _backgroundMusicClip;
+            _backgroundMusicAudioSource.loop = true;
+            _backgroundMusicAudioSource.Play();
         }
     }
 }
