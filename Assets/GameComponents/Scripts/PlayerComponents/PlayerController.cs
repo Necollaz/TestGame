@@ -21,14 +21,12 @@ namespace GameComponents.Scripts.PlayerComponents
         
         private PlayerMovement _playerMovement;
         private PlayerInput _inputProcessor;
-        private MoveIndicator _currentIndicator;
         private MoveIndicatorGenerator _indicatorGenerator;
         private ObjectPool<MoveIndicator> _indicatorPool;
         private ResourceSpawner _targetBuilding;
         private ResourceСollector _сollector;
-        private Coroutine _collectCoroutine;
 
-        public MoveIndicator CurrentIndicator => _currentIndicator;
+        public MoveIndicator CurrentIndicator { get; private set; }
         public MoveIndicatorGenerator IndicatorGenerator => _indicatorGenerator;
         
         private void Awake()
@@ -54,7 +52,7 @@ namespace GameComponents.Scripts.PlayerComponents
         
         public void SetTargetPosition(Vector3 targetPosition, ResourceSpawner spawner)
         {
-            _playerMovement.MoveTo(targetPosition);
+            _playerMovement.MoveTo(targetPosition); 
             
             if(spawner != null)
             {
@@ -71,8 +69,6 @@ namespace GameComponents.Scripts.PlayerComponents
                     playerAnimation.SetCollecting(false);
                 }
             }
-            
-            _playerMovement.MoveTo(targetPosition);
         }
         
         public void SpawnIndicator(Vector3 hitPoint)
@@ -82,13 +78,13 @@ namespace GameComponents.Scripts.PlayerComponents
         
         public void SetCurrentIndicator(MoveIndicator indicator)
         {
-            if (_currentIndicator != null)
+            if (CurrentIndicator != null)
             {
-                _currentIndicator.ResetIndicator();
-                _indicatorPool.Return(_currentIndicator);
+                CurrentIndicator.ResetIndicator();
+                _indicatorPool.Return(CurrentIndicator);
             }
             
-            _currentIndicator = indicator;
+            CurrentIndicator = indicator;
         }
         
         public void OnLeftBuilding()

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4402564128359272599}
   - component: {fileID: 8758252269901853642}
   - component: {fileID: 4416820233459036751}
+  - component: {fileID: -182383345620070361}
   m_Layer: 0
   m_Name: MoveIndicator
   m_TagString: Untagged
@@ -103,3 +104,15 @@ MonoBehaviour:
   _rotationDuration: 2
   _scaleAnimationDuration: 2
   _yOffset: 1
+--- !u!114 &-182383345620070361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6343148647317495796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04ab03eda4924255883eac8244e7eb87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

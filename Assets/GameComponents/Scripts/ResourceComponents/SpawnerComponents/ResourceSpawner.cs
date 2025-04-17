@@ -12,13 +12,16 @@ namespace GameComponents.Scripts.ResourceComponents.SpawnerComponents
         [SerializeField] private Transform _stopPointPlayer;
         [SerializeField] private float _spawnRadius = 2f;
         
-        private readonly List<Resource> _activeResources = new List<Resource>();
+        private readonly Queue<Resource> _activeResources = new Queue<Resource>();
+        
         private ObjectPool<Resource> _resourcePool;
+        private ResourceType _assignedType;
         
         private int _resourceCount;
         
         public event Action<int> ResourceProduced;
         
+        public ResourceType AssignedResourceType => _assignedType;
         public Transform StopPointPlayer => _stopPointPlayer;
         public int ResourceCount => _resourceCount;
         
@@ -29,6 +32,7 @@ namespace GameComponents.Scripts.ResourceComponents.SpawnerComponents
                 return;
             }
             
+            _assignedType = resourceData.ResourceType;
             _resourcePool = new ObjectPool<Resource>(resourceData.ResourcePrefab, poolSize);
         }
         
@@ -39,18 +43,20 @@ namespace GameComponents.Scripts.ResourceComponents.SpawnerComponents
                 return null;
             }
             
-            Vector3 spawnOrigin = _spawnPoint != null ? _spawnPoint.position : transform.position;
-            Vector2 randomOffset = Random.insideUnitCircle * _spawnRadius;
-            Vector3 spawnPosition = spawnOrigin + new Vector3(randomOffset.x, 0f, randomOffset.y);
+            Vector3 origin = _spawnPoint != null ? _spawnPoint.position : transform.position;
+            Vector2 offset = Random.insideUnitCircle * _spawnRadius;
+            Vector3 spawnPosition = origin + new Vector3(offset.x, 0f, offset.y);
             
             Resource resourceInstance = _resourcePool.Get();
             
             resourceInstance.transform.SetParent(transform);
-            resourceInstance.transform.position = spawnPosition;
+            resourceInstance.SpawnAt(spawnPosition);
+            
+            /*resourceInstance.transform.position = spawnPosition;
             resourceInstance.transform.rotation = Quaternion.identity;
-            resourceInstance.gameObject.SetActive(true);
+            resourceInstance.gameObject.SetActive(true);*/
 
-            _activeResources.Add(resourceInstance);
+            _activeResources.Enqueue(resourceInstance);
             
             _resourceCount++;
             
@@ -61,18 +67,18 @@ namespace GameComponents.Scripts.ResourceComponents.SpawnerComponents
         
         public bool CollectResource()
         {
-            if (_activeResources.Count == 0 || _resourcePool == null)
+            if(_activeResources.Count == 0 || _resourcePool == null)
+            {
                 return false;
+            }
             
-            Resource resource = _activeResources[0];
-            
-            _activeResources.RemoveAt(0);
+            Resource resource = _activeResources.Dequeue();
             
             _resourceCount--;
             
             ResourceProduced?.Invoke(_resourceCount);
             
-            resource.gameObject.SetActive(false);
+            resource.Collect();
             _resourcePool.Return(resource);
 
             return true;

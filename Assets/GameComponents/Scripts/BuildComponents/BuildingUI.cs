@@ -29,18 +29,18 @@ namespace GameComponents.Scripts.BuildComponents
                     _resourceNameText.text = _resourceData.ResourceDisplayName;
                 }
             }
-            
-            if (_resourceSpawner == null)
+
+            if(_resourceSpawner == null)
             {
-                if (!TryGetComponent(out ResourceSpawner _))
-                {
-                    return;
-                }
+                _resourceSpawner = GetComponent<ResourceSpawner>();
             }
-            
-            _resourceSpawner.ResourceProduced += UpdateResourceCountUI;
-            
-            UpdateResourceCountUI(_resourceSpawner.ResourceCount);
+
+            if (_resourceSpawner != null)
+            {
+                _resourceSpawner.ResourceProduced += UpdateResourceCountUI;
+                
+                UpdateResourceCountUI(_resourceSpawner.ResourceCount);
+            }
         }
         
         private void OnDestroy()
