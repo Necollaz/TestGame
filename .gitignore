@@ -1,11 +1,11 @@
+# Ignore everything in the root, then re‑include only the folders/files we want
 /*
-
 !.gitignore
-!.idea/
 !Assets/
 !Packages/
 !ProjectSettings/
 
+# ---- Unity generated folders ----
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -16,18 +16,25 @@ MemoryCaptures/
 UserSettings/
 Assets/AssetStoreTools*
 
+# ---- IDE / editor settings ----
+# Don’t track JetBrains Rider project files
+.idea/
+
+# ---- OS & editor metadata ----
 .DS_Store
 *.swp
 sysinfo.txt
 
+# ---- Unity cache / db files ----
 *.pidb
 *.mdb
 *.opendb
 
+# ---- Build outputs ----
 *.apk
 *.aab
 *.xcodeproj
 *.xcworkspace
 *.xcuserstate
 *.xcuserdata
-*.pbxuser
+*.pbxuserstate
