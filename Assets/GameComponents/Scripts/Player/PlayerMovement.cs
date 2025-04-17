@@ -25,6 +25,11 @@ namespace GameComponents.Scripts.Player
             _animation.SetWalking(false);
         }
         
+        private void Start()
+        {
+            _animation.SetWalking(false);
+        }
+        
         private void Update()
         {
             if(_isMoving)
