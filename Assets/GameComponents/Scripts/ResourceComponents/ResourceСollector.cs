@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using GameComponents.Scripts.BuildComponents;
 using GameComponents.Scripts.ResourceComponents.SpawnerComponents;
 using GameComponents.Scripts.ResourceComponents.UI;
 
@@ -11,6 +10,7 @@ namespace GameComponents.Scripts.ResourceComponents
         private readonly Dictionary<ResourceType, int> _collectedCounts;
         
         private ResourceSpawner _spawner;
+        private ResourceType _currentType;
         private bool _isGathering;
         private bool _pendingGather;
 
@@ -30,6 +30,7 @@ namespace GameComponents.Scripts.ResourceComponents
             StopGathering();
 
             _spawner = spawner;
+            _currentType = spawner.AssignedResourceType;
             _pendingGather = true;
         }
         
@@ -82,14 +83,11 @@ namespace GameComponents.Scripts.ResourceComponents
             {
                 return;
             }
-
-            if (_spawner.CollectResource() && _spawner.TryGetComponent(out BuildingUI bui))
+            
+            if (_spawner.CollectResource())
             {
-                ResourceType type = bui.ResourceData.ResourceType;
-                
-                _collectedCounts[type]++;
-                
-                _collectionUI.UpdateResourceCount(type, _collectedCounts[type]);
+                _collectedCounts[_currentType]++;
+                _collectionUI.UpdateResourceCount(_currentType, _collectedCounts[_currentType]);
             }
         }
     }

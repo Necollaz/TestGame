@@ -9,16 +9,8 @@ namespace GameComponents.Scripts.BuildComponents
     {
         [SerializeField] private ResourceSpawner _spawner;
         [SerializeField] private ResourceData _resourceData;
-        [SerializeField] private int _poolSize = 10;
-        [SerializeField] private float _productionTime;
 
         public ResourceSpawner Spawner => _spawner;
         public ResourceData ResourceData => _resourceData;
-        public int PoolSize => _poolSize;
-        public float ProductionTime
-        {
-            get => _productionTime;
-            set => _productionTime = value;
-        }
     }
 }
